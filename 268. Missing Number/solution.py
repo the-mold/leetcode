@@ -9,7 +9,8 @@ def missingNumber(nums) -> int:
 missingNumber([0,1,3,5,4])
 
 
-Complexity: O(n log n)   ## this is always the worst case complexity when you have sorting in python
+Time:   O(n log n)   ## this is always the worst case complexity when you have sorting in python
+Memory: O(1)
 
 
 
@@ -20,16 +21,18 @@ def missingNumber(nums) -> int:
     if i not in numss:
       return i
 
-Complexity: O(n)   ## this is always the worst case complexity when you have sorting in python
+Time:   O(n)
+Memory: O(n)
 
 
 
 # The best solution
 def missingNumber(nums) -> int:
   act_sum = sum(nums)
-  n = len(nums)
-  exp_sum = n * (n + 1) / 2
+  n = len(nums)                     # for sequence starting at 1, you do `n = len(nums) + 1`
+  exp_sum = n * (n + 1) / 2         # arithmeric sum for natural numbers that start in sequence
 
   return exp_sum - act_sum
 
-Complexity: O(log n)   ## this is always the worst case complexity when you have sorting in python
+Time:   O(n)
+Memory: O(1)
