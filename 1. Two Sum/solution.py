@@ -10,12 +10,25 @@ class Solution:
     #             if (nums[idx] + nums[idx2]) == target:
     #                 return [idx, idx2]
     
-    # Solution 2
-    def twoSum(self, nums: List[int], target: int) -> List[int]:
-        nums_map = {}
-        for idx, n in enumerate(nums):
-            complement = target - n
-            if complement in nums_map:
-                return [idx, nums_map[complement]]
+    # # Solution 2
+    # def twoSum(self, nums: List[int], target: int) -> List[int]:
+    #     nums_map = {}
+    #     for idx, n in enumerate(nums):
+    #         complement = target - n
+    #         if complement in nums_map:
+    #             return [idx, nums_map[complement]]
 
-            nums_map[n] = idx
+    #         nums_map[n] = idx
+
+
+    # Solution 3
+    def twoSum(self, nums: List[int], target: int) -> List[int]:
+        nums_s = set(nums)
+        for i in range(len(nums)):
+            complement = target - nums[i]
+            if complement in nums_s and complement != nums[i]:
+                return complement, nums[i]
+
+    # Time: O(n)
+    # Memory: O(n)
+    
