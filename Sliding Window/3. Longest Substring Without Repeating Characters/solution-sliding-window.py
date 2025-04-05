@@ -23,5 +23,7 @@ class Solution:
         return max_unique_string_length
 
 
-# Complexity is O(n) even though it looks like there are two loops. 
+# Time Complexity is O(n) even though it looks like there are two loops. 
 # The first and the second loop will run at most n times, therefore, O(n).
+
+#S: O(n)
