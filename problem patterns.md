@@ -8,6 +8,18 @@ Pointers move in same dicrection. One is faster than the other one. Exampe: find
 Opposite direction. Example: find duplicates.
 
 
+# Binary search
+It requires a sorted array!!! Here you divide steps by 2 to achieve T:O(log n).
+
+# Breadth-first search
+Going through tree level-by-leve from top to bottom. Uses a queue.
+It is the best for searching the shortest path or reporting tree by levels.
+
+# Depth-first search
+You go deep in one route to explore all nodes before you explore other nodes. Uses a call stack(recursion).
+It is the best used for exploring all paths in the tree.
+
+
 # Dynamic problem
 Breaking down a complex problem into set of simpler underlying propblems AND reusing result of those undelying problems to solve the original problem.
 ## Approaches
