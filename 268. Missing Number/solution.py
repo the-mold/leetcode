@@ -9,8 +9,8 @@ def missingNumber(nums) -> int:
 missingNumber([0,1,3,5,4])
 
 
-Time:   O(n log n)   ## this is always the worst case complexity when you have sorting in python
-Memory: O(1)
+# Time:   O(n log n)   ## this is always the worst case complexity when you have sorting in python
+# Memory: O(1)
 
 
 
@@ -21,8 +21,8 @@ def missingNumber(nums) -> int:
     if i not in numss:
       return i
 
-Time:   O(n)
-Memory: O(n)
+# Time:   O(n)
+# Memory: O(n)
 
 
 
@@ -34,5 +34,5 @@ def missingNumber(nums) -> int:
 
   return exp_sum - act_sum
 
-Time:   O(n)
-Memory: O(1)
+# Time:   O(n)
+# Memory: O(1)

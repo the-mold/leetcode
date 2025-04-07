@@ -20,8 +20,18 @@ You go deep in one route to explore all nodes before you explore other nodes. Us
 It is the best used for exploring all paths in the tree.
 
 
+# Priority queue
+Use it every time problem says "Find Kth largest/smallest elements in array", "Top K elements", "K closest elements to origin". 
+
 # Dynamic problem
 Breaking down a complex problem into set of simpler underlying propblems AND reusing result of those undelying problems to solve the original problem.
 ## Approaches
 Top-down: TODO.
 Bbottom-up: More efficient: Example: CoinChange, Break strings in words from dict.
+
+
+
+<!-- 
+Reverse the second half of a linked list​
+Find all anagrams in a string​
+Merge overlapping intervals -->
