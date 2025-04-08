@@ -29,7 +29,7 @@ def missingNumber(nums) -> int:
 # The best solution
 def missingNumber(nums) -> int:
   act_sum = sum(nums)
-  n = len(nums)                     # for sequence starting at 1, you do `n = len(nums) + 1`
+  n = len(nums)                     
   exp_sum = n * (n + 1) / 2         # arithmeric sum for natural numbers that start in sequence
 
   return exp_sum - act_sum
