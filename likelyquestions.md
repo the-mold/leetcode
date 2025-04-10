@@ -1,3 +1,5 @@
+https://seanprashad.com/leetcode-patterns/
+
 1. Array and String Manipulation
 Example: "Given an array of integers, find the two numbers that add up to a given target."
 
