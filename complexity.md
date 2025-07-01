@@ -46,6 +46,7 @@ def permute(nums, path=[]):
 1. Check if sorting is involved: likely `O(n log n)`.
 2. Count loops:
 Single loop? `O(n)`
+One loop after another? `O(n + m)` which is `O(n)`
 Nested loops? `O(n^(number_of_loops))`
 
 3. Check for recursion → Estimate calls and tree size.
