@@ -56,7 +56,7 @@ O(2ⁿ) or O(n!): Recursive problems (e.g., Fibonacci, Backtracking).
 
 
 
-# Memory Complexity
+# Space(Memory) Complexity
 #Best---------
 1. O(1) – Constant Space (Best)
 Memory usage does NOT grow with input size.
@@ -76,7 +76,7 @@ Example: Recursive Binary Search (O(log n) call stack)
 3. O(n) – Linear Space
 Memory grows proportionally to input size (n).
 Example: Storing a new list or using recursion up to depth n.
-Python soriting is O(n).
+Python sorting is O(n).
 ```
 def duplicate_array(arr):
     return arr[:]  # Creates a new list, O(n) space
