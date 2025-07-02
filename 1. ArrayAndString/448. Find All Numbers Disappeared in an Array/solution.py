@@ -3,7 +3,7 @@ def findAllMissingNumbers(nums):
   ans = []
   n = len(nums)
 
-  for i in range(1, n + 1):
+  for i in range(1, n + 1):  #T:O(n)
     if i not in sett:
       ans.append(i)
   
