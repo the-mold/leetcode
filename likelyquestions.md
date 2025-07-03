@@ -40,3 +40,6 @@ Example: "Write a function to determine whether a number is prime."
 
 Example: "Given a list of integers, find the greatest common divisor of the numbers."
 
+Google
+https://leetcode.com/problems/separate-squares-i/description/
+Allien dictionary
