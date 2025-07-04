@@ -11,7 +11,7 @@ Example: Binary Search.
 Scales directly with input size.
 Example: Looping through an array(for loop, sum(nums), max(nums)).
 4. O(n log n) – Quasilinear Time
-Slightly worse than O(n), common in sorting algorithms.
+Slightly worse than O(n), common in sorting algorithms(it is in Python!)
 Example: Merge Sort, QuickSort (average case).
 
 #SLOW Performance---------
