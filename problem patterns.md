@@ -35,3 +35,29 @@ Bbottom-up: More efficient: Example: CoinChange, Break strings in words from dic
 Reverse the second half of a linked list​
 Find all anagrams in a string​
 Merge overlapping intervals -->
+
+
+
+
+Pattern	              Example Problems	                            Key Technique
+Sliding Window	      Max consecutive ones, longest substring	      Dynamic window, 2 pointers
+Two Pointers	        Reverse string, sorted array two sum	        Left/right indexes
+Prefix Sum	          Subarray sum equals k	                        Running sum + hash map
+Binary Search	        Search in rotated array, kth smallest element	Custom condition mid-search
+Backtracking	        N-Queens, combinations	                      Recursion with pruning
+DFS/BFS	              Number of islands, word ladder	              Queue or recursion
+Dynamic Programming	  Climbing stairs, longest palindrome	          DP table or memoization
+Monotonic Stack/Queue	Daily temperatures, sliding window max	      Stack/queue that maintains order
+Union Find (DSU)	    Connected components, redundant connection	  Disjoint Set with path compression
+Greedy	              Jump game, interval scheduling	              Make best local choice
+
+## Triggers
+If you see...	                          It’s probably...
+“longest”, “maximum”, “minimum”	        Sliding Window or DP
+“contiguous subarray”	                  Prefix Sum or Sliding Window
+“sorted array”	                        Two Pointers or Binary Search
+“all combinations/permutations”	        Backtracking
+“shortest path”	                        BFS or Dijkstra
+“number of islands”, “regions”	        DFS/BFS or Union Find
+“can you reach”, “can you finish”	      DFS cycle detection
+“intervals”, “merge”	                  Sorting + Greedy or Heap
