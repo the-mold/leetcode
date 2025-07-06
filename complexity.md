@@ -54,6 +54,17 @@ O(log n): If a problem size is halved each step (e.g., Binary Search).
 O(n log n): Merge Sort, QuickSort.
 O(2ⁿ) or O(n!): Recursive problems (e.g., Fibonacci, Backtracking).
 
+Python examples:
+#Array
+if c in vowels:     #O(n)
+#Set
+if c in vowels:     #O(1)
+
+#max, min, sum
+O(n)
+
+#sort
+O(n log n)
 
 
 # Space(Memory) Complexity
