@@ -8,6 +8,13 @@ Pointers move in same dicrection. One is faster than the other one. Exampe: find
 Opposite direction. Example: find duplicates.
 
 
+# Tree tranversal
+Visit all nodes in tree exactly once.
+Order of visiting has names:
+Preorder tranversal(Data Left Right(DLR)): <root><all_children_on_the_left><all_children_on_the_right>
+Inorder tranversal(LDR): <all_children_on_the_left><root><all_children_on_the_right>
+Postorder tranversal(LRD): <all_children_on_the_left><all_children_on_the_right><root>
+
 # Binary search
 It requires a sorted array!!! Here you divide steps by 2 to achieve T:O(log n).
 

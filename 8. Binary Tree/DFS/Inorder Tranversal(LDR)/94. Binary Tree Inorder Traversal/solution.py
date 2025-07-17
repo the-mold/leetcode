@@ -16,3 +16,7 @@ class Solution:
         
         dfs(root)
         return result
+
+# T:O(n)
+# S:O(h)
+# Traversal: inorder (LDR)
