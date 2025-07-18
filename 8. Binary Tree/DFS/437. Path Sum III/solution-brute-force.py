@@ -71,3 +71,28 @@ class Solution:
 # Check if the current node.val is equal to the remaining_sum. If it is, we've found one valid path.
 # Recursively call the helper for the left and right children, but this time, the target sum is remaining_sum - node.val.
 # The total count is the sum of paths found at the current node plus those found in its children.
+
+
+# # COMPLEXITIES
+# This solution uses a "brute-force" recursive approach. For every single node in the tree, it tries to find all paths starting from that node that sum up to targetSum.
+
+# Time Complexity: O(N^2) in the worst case, O(N log N) on a balanced tree
+# Outer Recursion (pathSum): The main function pathSum is called for every node in the tree. If there are N nodes, this function is called N times.
+# self.pathSum(root.left, targetSum)
+# self.pathSum(root.right, targetSum)
+# Inner Recursion (countNodeCombinations): For each of those N calls to pathSum, the helper function countNodeCombinations is called. This function traverses all the way down the subtree from the current node.
+# In the worst case (a skewed tree, like a linked list), this inner function might have to traverse up to N nodes.
+# In the best case (a perfectly balanced tree), it traverses log N nodes on average.
+# Putting it together:
+
+# Worst Case (Skewed Tree): The pathSum function is called for N nodes. For each node, countNodeCombinations does roughly N work (e.g., for the root it traverses N nodes, for its child N-1, and so on). This results in a complexity of approximately O(N^2).
+# Best Case (Balanced Tree): The pathSum function is called for N nodes. For each node, countNodeCombinations traverses a path of length equal to the height of the subtree, which is log N on average. This leads to a complexity of O(N log N).
+# Since we usually consider the worst-case scenario for complexity analysis, the time complexity is O(N^2).
+
+# Space Complexity: O(N) in the worst case, O(log N) on a balanced tree
+# The space complexity is determined by the maximum depth of the recursion stack.
+
+# The recursion happens in both pathSum and countNodeCombinations. The calls are nested, but the maximum depth of the call stack at any point in time is limited by the height of the tree (h).
+# Worst Case (Skewed Tree): The height of the tree is N. The recursion stack can go N levels deep. Therefore, the space complexity is O(N).
+# Best Case (Balanced Tree): The height of the tree is log N. The recursion stack will be at most log N levels deep. Therefore, the space complexity is O(log N).
+# Again, considering the worst case, the space complexity is O(N).
