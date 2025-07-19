@@ -31,3 +31,5 @@ class Solution:
     
 #T: O(n^2) , calculate path for each node separately
 #S: O(n)
+
+#Tranverse - preorder

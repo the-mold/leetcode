@@ -69,3 +69,14 @@ class Solution:
 
 # Best/Average Case (Balanced Tree): If the tree is well-balanced, the height H is approximately log(N). The space complexity would be O(log N).
 # Worst Case (Skewed Tree): If the tree is completely unbalanced (like a linked list), the height H is N. The space complexity would be O(N).
+
+
+# Tranverse - preorder traversal
+# The key pattern is Process Node, then Traverse Children. The very first thing the function does after the base case check is process the current node by updating self.max_length. Only after that does it make recursive calls to its children.
+
+# This matches the definition of a preorder traversal:
+
+# Visit/Process the current node.
+# Traverse the left subtree.
+# Traverse the right subtree.
+# Even though the order of visiting left and right children depends on the direction, the fundamental step of processing the node before its descendants remains consistent, making it a preorder traversal.

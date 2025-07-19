@@ -18,12 +18,12 @@ class Solution:
         if not root or root == p or root == q:
             return root
 
-        # Recurse on the left and right subtrees
+        # If nothing above is true, Recurse on the left and right subtrees
         left_lca = self.lowestCommonAncestor(root.left, p, q)
         right_lca = self.lowestCommonAncestor(root.right, p, q)
 
         # If both left and right subtrees return a non-None value,
-        # it means p and q are in different subtrees, so the current root is the LCA.
+        # it means p and q are in different subtrees, so the current root is the Lowest Common Ancestor(LCA).
         if left_lca and right_lca:
             return root
 
@@ -41,3 +41,22 @@ class Solution:
 # its left subtree and the other is in its right subtree. An interesting 
 # edge case is when one of the nodes is an ancestor of the other. In that 
 # situation, the ancestor node is the LCA. Our recursive solution handles this gracefully.
+
+# Complexity Analysis
+# Time Complexity: O(N), where N is the number of nodes in the tree. In the worst case, we have to visit every node once.
+# Space Complexity: O(H), where H is the height of the tree. This space is used by the recursion stack. For a completely unbalanced tree, this can be O(N). For a balanced tree, it's O(log N).
+
+# Tranverse
+# The traversal strategy used in this solution is a postorder traversal.
+
+# In a postorder traversal, we follow the pattern:
+
+# Traverse the left subtree.
+# Traverse the right subtree.
+# Process the current node.
+
+# Our lowestCommonAncestor function does exactly this:
+# left_lca = self.lowestCommonAncestor(root.left, p, q) (Traverse left)
+# right_lca = self.lowestCommonAncestor(root.right, p, q) (Traverse right)
+# The logic that follows (if left_lca and right_lca: ...) is the processing of the current root node, which happens only after the recursive calls for its children have returned.
+# So, the algorithm works its way down to the leaves of the tree and then makes decisions as the recursion unwinds back up to the root, which is the classic characteristic of a postorder traversal.
