@@ -43,6 +43,7 @@ Example: "Given a list of integers, find the greatest common divisor of the numb
 Google
 https://leetcode.com/problems/separate-squares-i/description/
 Allien dictionary
+https://leetcode.com/problems/network-delay-time/description/
 
 Google (Alphabet)
 Reputation: Known for being the most algorithmically rigorous. They test your fundamental problem-solving skills and your ability to think from first principles.
