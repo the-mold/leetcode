@@ -87,7 +87,7 @@ Example: Recursive Binary Search (O(log n) call stack)
 3. O(n) – Linear Space
 Memory grows proportionally to input size (n).
 Example: Storing a new list or using recursion up to depth n.
-Python sorting is O(n).
+Python sorting SPACE complexity is O(n).
 ```
 def duplicate_array(arr):
     return arr[:]  # Creates a new list, O(n) space
