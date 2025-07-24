@@ -44,6 +44,7 @@ Google
 https://leetcode.com/problems/separate-squares-i/description/
 Allien dictionary
 https://leetcode.com/problems/network-delay-time/description/
+https://www.youtube.com/watch?v=4tYoVx0QoN0
 
 Google (Alphabet)
 Reputation: Known for being the most algorithmically rigorous. They test your fundamental problem-solving skills and your ability to think from first principles.
