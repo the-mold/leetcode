@@ -25,7 +25,7 @@ def exist(board, word):
       
   return False
 
-#T:O(n * m * 4^L)     words case when each word has 4 choises. L is the length of the word. n and m are matrix params.
+#T:O(n * m * 4^L)     worst case when each word has 4 choises. L is the length of the word. n and m are matrix params.
 #S:O(L) , recursion depth is equal to word length
 
 
