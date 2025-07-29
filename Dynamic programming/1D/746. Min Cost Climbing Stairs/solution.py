@@ -5,7 +5,7 @@ class Solution:
             return 0
         
         if n == 1:
-            return const[0]
+            return cost[0]
 
         dp = [0] * n
         dp[0] = cost[0]
