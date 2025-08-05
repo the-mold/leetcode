@@ -67,6 +67,48 @@ O(n)
 O(n log n)
 
 
+## Common situations
+
+### Positive arithmetic progression
+```
+for i in range(n):
+    for j in range(i + 1):
+        # some constant time operation
+```
+- Outer Loop: The for i in range(n): loop runs n times, for i from 0 to n-1.
+- Inner Loop: The for j in range(i + 1, n): loop's number of iterations increases as i increases.
+    - When i is 0, the j is 1
+    - when i is 1, the j is 2
+    ...
+    - when i is n-1, the j is n
+- Total Operations: To find the total number of times the inner block executes, we need to sum the number of inner loop iterations for each outer loop iteration. This gives us the sum of an arithmetic series: 1 + 2 + 3 + ... + n
+- The Formula: The sum of the first n integers is given by the formula: n * (n + 1) / 2
+- Big O Notation: If we expand the formula, we get (n² + n) / 2. In Big O notation, we are interested in the dominant term as n grows large, and we ignore constant factors.
+    - The n² term grows much faster than the n term.
+    - We drop the n term and the constant factor of 1/2.
+This leaves us with O(n²).
+
+### Negative arithmetic progression
+```
+for i in range(n):
+    for j in range(i + 1, n):
+        # some constant time operation
+```
+- Outer Loop: The for i in range(n): loop runs n times, for i from 0 to n-1.
+- Inner Loop: The for j in range(i + 1, n): loop's number of iterations decreases as i increases.
+    - When i is 0, the inner loop runs n-1 times (for j from 1 to n-1).
+    - When i is 1, the inner loop runs n-2 times (for j from 2 to n-1).
+    ...
+    - When i is n-2, the inner loop runs 1 time (for j = n-1).
+    - When i is n-1, the inner loop runs 0 times (the range (n, n) is empty).
+- Total Operations: The total number of times the inner block is executed is the sum of these iterations: (n-1) + (n-2) + ... + 1 + 0
+- The Formula: This is the sum of the first n-1 integers. Using the arithmetic series sum formula k * (k+1) / 2 where k = n-1, we get: (n-1) * ((n-1) + 1) / 2 = (n-1) * n / 2 = (n² - n) / 2
+- Big O Notation: As with the last example, we focus on the term that grows the fastest as n gets large and we drop constant factors.
+The dominant term is n².
+We ignore the -n term and the 1/2 constant.
+
+
+
 # Space(Memory) Complexity
 #Best---------
 1. O(1) – Constant Space (Best)
