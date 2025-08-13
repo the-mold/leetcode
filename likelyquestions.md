@@ -69,6 +69,10 @@ Trees: A huge topic at Amazon. You must know everything about binary trees, BSTs
 Data Structures: They ask a lot of questions about which data structure is the right tool for the job (e.g., "When would you use a Heap vs. a BST?").
 Object-Oriented Design (OOD): Questions like "Design a parking lot" or "Design a movie ticketing system" are more common here, especially for mid-level and senior roles.
 Graphs: Common for problems related to logistics and networks (e.g., finding the shortest path for a delivery).
+Problems:
+First Unique Character
+
+
 
 Apple
 Reputation: The process is known to be more secretive and highly team-dependent. The questions are often very practical and related to the specific domain you're interviewing for (e.g., iOS, iCloud, Graphics).
