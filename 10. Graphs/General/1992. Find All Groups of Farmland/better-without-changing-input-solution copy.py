@@ -3,7 +3,7 @@ class Solution:
         rows = len(land)
         cols = len(land[0])
 
-        visited = [[False] * cols for _ in range(rows)]
+        visited = [[False for _ in range(cols)] for _ in range(rows)]
 
         self.max_end_row = 0
         self.max_end_col = 0

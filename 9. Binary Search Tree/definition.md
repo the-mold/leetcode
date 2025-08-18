@@ -11,4 +11,4 @@ Recursive Property: Both the left and right subtrees of N must also be binary se
 No Duplicates (Usually): By standard convention, BSTs do not contain duplicate values. If duplicates are allowed, they are typically all placed in the right subtree to maintain a consistent structure.
 
 IMPORTANT!
-Inoder  tranverse goes through tree in a sorted manner.
+Inoder tranverse goes through tree in a sorted manner.
