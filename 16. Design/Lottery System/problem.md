@@ -1,0 +1,3 @@
+src: https://leetcode.com/discuss/post/1945438/amazon-phone-screen-and-onsite-sde-i-mun-2rsz/
+
+Design a lottery system where a customer can buy a lottery ticket ranging from 1 cent to 100 dollars. At the end of sale of all lottery ticket we will have a lucky draw where a winner will be chosen randomly and the chances of winning a customer should be according to the price they have paid for the ticket in other words the one who paid more should have more chances of winning.
