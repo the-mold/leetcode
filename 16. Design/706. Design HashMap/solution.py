@@ -9,6 +9,7 @@ class MyHashMap:
     def put(self, key: int, value: int) -> None:
         index = self.get_index(key)
 
+        # check if item exists
         for idx, item in enumerate(self.hashmap[index]):
             if key == item[0]:
                 self.hashmap[index][idx] = (key, value)
