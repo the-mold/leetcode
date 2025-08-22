@@ -1,45 +1,35 @@
-from typing import List
-
 class Solution:
     def generateParenthesis(self, n: int) -> List[str]:
-        """
-        Generates all combinations of well-formed parentheses for n pairs.
-        """
-        result = []
-
-        # The backtracking function will build the string.
-        # It needs to track the number of open and close parentheses used.
-        def backtrack(current_string: str, open_count: int, close_count: int):
-            # Base Case: If the string has reached its maximum length (2 * n),
-            # we have a complete and valid combination.
-            if len(current_string) == 2 * n:
-                result.append(current_string)
+        ans = []
+        
+        def backtracking(str_list, left_count, right_count):
+            if len(str_list) == 2 * n:
+                ans.append("".join(str_list))
                 return
 
-            # --- Recursive Steps (Decisions) ---
+            if left_count < n:
+                str_list.append("(")
+                backtracking(str_list, left_count + 1, right_count)
+                str_list.pop()
 
-            # Decision 1: Can we add an opening parenthesis?
-            # We can if we haven't used all 'n' available open parentheses.
-            if open_count < n:
-                backtrack(current_string + "(", open_count + 1, close_count)
+            if right_count < left_count:
+                str_list.append(")")
+                backtracking(str_list, left_count, right_count + 1)
+                str_list.pop()
+        
+        backtracking([], 0, 0)
 
-            # Decision 2: Can we add a closing parenthesis?
-            # We can if the number of closing parentheses is less than the number
-            # of open ones. This is the key constraint for well-formedness.
-            if close_count < open_count:
-                backtrack(current_string + ")", open_count, close_count + 1)
+        return ans
+    
+# Intuition
+# See the screenshot. This is how the algorithm is performerd. First you explore the left part. When you reach the left bottom, you start removing elements from 
+# `str_list` with .pop(). Then you come back to the case with "(" and move to the right part.
 
-        # Start the backtracking process with an empty string and zero counts.
-        backtrack("", 0, 0)
-        return result
+# Time Complexity: O( (4^N) / sqrt(N) )
+# The algorithm visits exactly as many nodes as there are valid parentheses combinations, which grows exponentially but is constrained by the Catalan number formula.
+# - What we're generating: All valid combinations of n pairs of parentheses
+# - How many valid combinations exist: This is the nth Catalan number = 4^n / √n (approximately)
 
-
-# Time Complexity: O( (4^N) / (N * sqrt(N)) )
-# The time complexity is proportional to the number of valid sequences we generate. The number of valid sequences is the n-th Catalan number.
-# For each valid sequence of length 2N, we do O(N) work to create the string.
-# A loose upper bound for the Catalan numbers is 4^N. A tighter asymptotic bound is 
-# (4^N) / (N * sqrt(N)).
-# Therefore, the time complexity is dominated by the number of solutions we have to generate and build.
 
 # Space Complexity: O(N) (excluding output) or O(N * C_n) (including output)
 # Excluding the output array: The space is determined by the maximum depth of the recursion call stack. At any point, we are building a string of length up to 2N. The recursion depth is 2N. Therefore, the space complexity of the call stack is O(N).
