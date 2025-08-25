@@ -20,3 +20,9 @@ def findKthLargest(nums, k):
 nums = [3,2,1,5,6,4]
 k = 2
 print(findKthLargest(nums, k))  # Output: 5
+
+
+
+# Intuition
+# You start pushing elements to the min heap(lowest elements will be first in your array). If size of array exceeds k, then pop element from heap. In this way
+# the first element in the array will always be your kth largest element. 
