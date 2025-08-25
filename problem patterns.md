@@ -58,13 +58,18 @@ Monotonic Stack/Queue	Daily temperatures, sliding window max	      Stack/queue t
 Union Find (DSU)	    Connected components, redundant connection	  Disjoint Set with path compression
 Greedy	              Jump game, interval scheduling	              Make best local choice
 
-## Triggers
-If you see...	                          It’s probably...
-“longest”, “maximum”, “minimum”	        Sliding Window or DP
-“contiguous subarray”	                  Prefix Sum or Sliding Window
-“sorted array”	                        Two Pointers or Binary Search
-“all combinations/permutations”	        Backtracking
-“shortest path”	                        BFS or Dijkstra
-“number of islands”, “regions”	        DFS/BFS or Union Find
-“can you reach”, “can you finish”	      DFS cycle detection
-“intervals”, “merge”	                  Sorting + Greedy or Heap
+## Triggers----------------------
+
+## Backtracking
+- find all possible combinations of smth
+
+## DP
+- “longest”, “maximum”, “minimum”
+- find optimal solution
+
+## Binary search 
+- sorted array
+- You must write an algorithm with O(log n)
+
+## Min Heap:
+kth largest/smallest element
