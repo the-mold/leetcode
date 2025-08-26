@@ -15,7 +15,7 @@ class Solution:
             prev = current
             current = temp
         
-        return prev
+        return prev #return prev, because at this point your current is None and prev is the last node and a new head now.
     
 #T: O(n)
 #S: O(1)

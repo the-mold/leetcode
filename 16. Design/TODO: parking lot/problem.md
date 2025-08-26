@@ -1,0 +1,1 @@
+implement a parking lot system. The problem involved allocating the smallest available slot to a car when it enters and marking the slot as available when the car leaves. The input consisted of requests containing the car number and whether it was entering or leaving.
