@@ -72,7 +72,15 @@ Graphs: Common for problems related to logistics and networks (e.g., finding the
 Problems:
 First Unique Character
 
-
+Amazon OA:
+https://leetcode.com/discuss/post/373202/amazon-oa-2019-optimal-utilization-by-si-ucy5/
+https://leetcode.com/discuss/post/1332412/amazon-online-assessment-question-by-daw-ju70/
+https://leetcode.com/discuss/post/1940397/amazon-online-assessment-find-the-maximu-0lsx/
+https://leetcode.com/discuss/post/6152021/amazon-online-assessment-question-by-shi-mc9l/
+Q1. Closest K points to origin
+Q2. Given two arrays A1, A2 and target, return the index from A1 and index from A2 whose sum is closest to target
+- An array of integers representing vegetable types, repeatedly remove two different vegetables until no more pairs can be removed, and return the minimum number of vegetables left.
+- Find the lexicographically smallest string by removing one digit and inserting its incremented value.
 
 Apple
 Reputation: The process is known to be more secretive and highly team-dependent. The questions are often very practical and related to the specific domain you're interviewing for (e.g., iOS, iCloud, Graphics).

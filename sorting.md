@@ -1,1 +1,0 @@
-Binary search is an efficient algorithm used to find a target value in a sorted array. It works by repeatedly dividing the search space in half, eliminating half of the elements each time.
