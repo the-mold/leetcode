@@ -81,6 +81,9 @@ Q1. Closest K points to origin
 Q2. Given two arrays A1, A2 and target, return the index from A1 and index from A2 whose sum is closest to target
 - An array of integers representing vegetable types, repeatedly remove two different vegetables until no more pairs can be removed, and return the minimum number of vegetables left.
 - Find the lexicographically smallest string by removing one digit and inserting its incremented value.
+##
+3434. Maximum Frequency After Subarray Operation
+
 
 Apple
 Reputation: The process is known to be more secretive and highly team-dependent. The questions are often very practical and related to the specific domain you're interviewing for (e.g., iOS, iCloud, Graphics).
