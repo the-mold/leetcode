@@ -100,3 +100,7 @@ System Design: This is the main event. You'll be expected to have deep conversat
 Concurrency and Networking: Critical for roles related to streaming and backend services.
 Past Experience: Interviews are often deep dives into your past projects. They will challenge the architectural decisions you made.
 A/B Testing and Data: Problems related to personalization, recommendation algorithms, and analyzing user data can come up.
+
+Toptal
+Repeated String 
+Minimum Distances

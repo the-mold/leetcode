@@ -1,1 +1,0 @@
-[Format Number](https://leetcode.com/discuss/post/1155893/toptal-oa-format-number-by-eels-dev-diav/)

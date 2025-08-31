@@ -1,3 +1,4 @@
+
 def comprehension(nums):
   res = []
   for idx, num in enumerate(nums):
