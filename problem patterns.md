@@ -73,3 +73,20 @@ Greedy	              Jump game, interval scheduling	              Make best loca
 
 ## Min Heap:
 kth largest/smallest element
+
+
+# When to use which algorith?
+
+## Heap
+When you need get-max, get-min with constant time O(1).
+Push and pop take O(log n).
+
+## BST
+Search, insert, delete any key: O(log n).
+
+## Simple binary tree
+It is just tree with no ordering like in BST. Just use the BST.
+
+## Linked lists
+1. Insert/delete in the middle with O(1), without shifting neighbours(LRU cache with double linked list nodes).
+2. Round-robin scheduling: Circular linked list for cyclic iteration.
