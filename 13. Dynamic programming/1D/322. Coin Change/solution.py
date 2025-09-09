@@ -2,12 +2,6 @@ def coinChange(coins, amount):
   dp = [float("inf")] * (amount + 1)  # [0......amount]
   dp[0] = 0 # to build amount of 0 we need 0 coins.
 
-  for i in range(1, amount+1):
-    for coin in coins:
-      if i - coin >= 0:
-        # Checks all possible ways to make i using different coins.
-        dp[i] = min(dp[i], 1 + dp[i - coin]) # This refers to the minimum number of coins needed to make the amount (i - coin). Since we're adding coin, we only need one more coin to form i, so we add 1:  
-
   for a in range(amount + 1):
     for coin in coins:
         if a - coin >= 0: # check if amount a could be built with the coin

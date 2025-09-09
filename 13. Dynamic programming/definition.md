@@ -26,6 +26,7 @@
     
 #     memo[n] = fib(n - 1, memo) + fib(n - 2, memo)
 #     return memo[n]
+
 # 2. Bottom-Up with Tabulation
 # This is an iterative approach. You build a table (usually an array or a 2D grid) and fill it up from the "bottom" (the smallest subproblems) to the "top" (the final solution).
 
@@ -49,6 +50,8 @@
 #         dp[i] = dp[i-1] + dp[i-2]
         
 #     return dp[n]
+
+
 # Classic DP Problems for Interviews
 # Here are some must-know DP problems. Practicing these will build a strong foundation.
 
@@ -58,6 +61,7 @@
 # Coin Change (find the minimum number of coins)
 # House Robber
 # Longest Increasing Subsequence (LIS)
+
 # 2D DP (using a grid):
 # Unique Paths
 # Longest Common Subsequence (LCS)
@@ -73,7 +77,7 @@
 
 
 
-# choose n or n+1 as dp length?
+# Choose n or n+1 as dp length?
 # The choice is all about convenience and clarity.
 
 # Use n+1 when the problem is defined in terms of 1 to n items/steps, and you need to find the value for n.
