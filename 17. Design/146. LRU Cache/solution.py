@@ -37,6 +37,7 @@ class LRUCache:
         
 
     def put(self, key: int, value: int) -> None:
+        # remove if node with key existed, since we need to move it to the end anyway
         if key in self.dic:
             old_node = self.dic[key]
             self.remove(old_node)

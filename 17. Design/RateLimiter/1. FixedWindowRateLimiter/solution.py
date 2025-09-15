@@ -74,6 +74,6 @@ class FixedWindowRateLimiter:
     self._stop_event.set()
     
     # 3. Use .join() to wait for the thread to finish its last task.
-    self._cleanup_job.join()
+    self._cleanup_task.join()
     print("Cleanup thread has been joined.")
   

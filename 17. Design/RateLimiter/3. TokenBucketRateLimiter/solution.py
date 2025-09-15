@@ -12,7 +12,7 @@ class Bucket:
   def refill(self):
     current_time = self.time()
     # Note: time.monotonic returns a floating point number so time_since_last_refill could be 1.5
-    time_since_last_refill = current_time - self.time_last_refill # 
+    time_since_last_refill = current_time - self.time_last_refill
     
     # tokens to add since last refill 
     new_tokens = time_since_last_refill * self.refill_rate
