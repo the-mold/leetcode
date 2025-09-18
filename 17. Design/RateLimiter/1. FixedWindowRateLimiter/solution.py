@@ -64,6 +64,7 @@ class FixedWindowRateLimiter:
       self._buckets = {
         key: value 
         for key, value in self._buckets.items()
+        # check if sign is correct
         if current_time - value[0] > self.window_seconds       
       }
   
