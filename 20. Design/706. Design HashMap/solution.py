@@ -15,6 +15,7 @@ class MyHashMap:
                 self.hashmap[index][idx] = (key, value)
                 return
         
+        # otherwise add a new item
         self.hashmap[index].append((key, value))
 
     def get(self, key: int) -> int:
