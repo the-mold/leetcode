@@ -10,6 +10,12 @@ l = 0
 r = len(nums) - 1
 while l <= r:
   mid = (l + r) // 2
+  if num == self.arr[mid]:
+      return mid
+  elif num > self.arr[mid]:
+      l = mid + 1
+  else:
+      r = mid - 1
 
 
 

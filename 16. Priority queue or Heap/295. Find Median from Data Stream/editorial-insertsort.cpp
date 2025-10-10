@@ -24,7 +24,6 @@ public:
 
 // Binary Search takes O(logn) time to find correct insertion position.
 // Insertion can take up to O(n) time since elements have to be shifted inside the container to make room for the new element.
-// Pop quiz: Can we use a linear search instead of a binary search to find insertion position, without incurring any significant runtime penalty?
 
 // Space complexity: O(n) linear space to hold input in a container.
 
