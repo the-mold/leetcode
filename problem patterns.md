@@ -30,6 +30,10 @@ It is the best used for exploring all paths in the tree.
 # Priority queue
 Use it every time problem says "Find Kth largest/smallest elements in array", "Top K elements", "K closest elements to origin". 
 
+# Backtracking
+Backtracking is an algorithm for finding all solutions by exploring all potential candidates. If the solution candidate turns out to be not a solution (or at least not the last one), the backtracking algorithm discards it by making some changes on the previous step, i.e. backtracks and then tries again.
+To implement backtracking, we implement a backtrack function that makes some changes to the state, calls itself again, and then when that call returns it undoes those changes (this last part is why it's called "backtracking").
+
 # Dynamic problem
 Breaking down a complex problem into set of simpler underlying propblems AND reusing result of those undelying problems to solve the original problem.
 ## Approaches
@@ -61,7 +65,7 @@ Greedy	              Jump game, interval scheduling	              Make best loca
 ## Triggers----------------------
 
 ## Backtracking
-- find all possible combinations of smth
+- find all possible combinations/subsets of smth
 
 ## DP
 - “longest”, “maximum”, “minimum”
