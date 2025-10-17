@@ -1,20 +1,24 @@
-# Definition for a binary tree node.
-# class TreeNode:
-#     def __init__(self, val=0, left=None, right=None):
-#         self.val = val
-#         self.left = left
-#         self.right = right
 class Solution:
     def hasPathSum(self, root: Optional[TreeNode], targetSum: int) -> bool:
-        def dfs(node, target):
+        def helper(node, target):
             if not node:
                 return False
+            
+            is_leaf_node = not node.left and not node.right
+            if target - node.val == 0 and is_leaf_node:
+                return True
+            
+            left = helper(node.left, target - node.val)
+            right = helper(node.right, target - node.val)
 
-            # return true if it is a leaf node and value is equal to remainder
-            if not node.left and not node.right:
-                return node.val == target
+            return left or right
 
-            target = target - node.val
-            return dfs(node.left, target) or dfs(node.right, target)
-        
-        return dfs(root, targetSum)
+        return helper(root, targetSum)
+
+#T:O(n), because each node is visited once.
+
+# Space Complexity: O(h)
+# Where h is the height of the tree (due to recursion stack).
+
+# Best case (balanced tree): O(log n)
+# Worst case (skewed tree): O(n)
