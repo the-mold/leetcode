@@ -40,7 +40,6 @@ Tree is also a graph that is undirected and acyclic(no cycles).
 
 
 # What is Topological Sort?
-Applicable for DAG(directed acyclic graphs) only!!!
 Topological sort is a linear ordering of the nodes in a directed graph where for every directed edge from node A to node B, node A comes before node B in the ordering.
 So you just list all graph nodes from start to finish.
 
