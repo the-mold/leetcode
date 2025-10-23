@@ -27,6 +27,9 @@
 #     memo[n] = fib(n - 1, memo) + fib(n - 2, memo)
 #     return memo[n]
 
+Warning!!! "Top-down" doesn't mean starting at the "top" of the array (index n-1) or end result. It means starting at the "top" of the problem itself and breaking it down. For example: how must it will cost me if i start at cell 0 or day 0 etc.
+
+
 # 2. Bottom-Up with Tabulation
 # This is an iterative approach. You build a table (usually an array or a 2D grid) and fill it up from the "bottom" (the smallest subproblems) to the "top" (the final solution).
 
