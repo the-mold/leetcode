@@ -1,8 +1,7 @@
 # DP framework
 
 0. Define state
-In a DP problem, a state is a set of variables that can sufficiently describe a scenario. These variables are called state variables, and we only care about relevant ones. For example, to describe every scenario in Climbing Stairs, there is only 1 relevant state variable, the current step we are on. We can denote this with an integer i. If 
-i = 6, that means that we are describing the state of being on the 6th step. Every unique value of 
+In a DP problem, a state is a set of variables that can sufficiently describe a scenario. These variables are called state variables, and we only care about relevant ones. For example, to describe every scenario in Climbing Stairs, there is only 1 relevant state variable, the current step we are on. We can denote this with an integer i. If i = 6, that means that we are describing the state of being on the 6th step. Every unique value of 
 i represents a unique state.
 
 1. A function or data structure that will compute/contain the answer to the problem for every given state.
