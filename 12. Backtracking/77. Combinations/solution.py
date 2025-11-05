@@ -17,6 +17,6 @@ class Solution:
         return ans
 
 # T: O(C(n,k) × k) or more detailed: O( n!/((k-1)!*(n-k)!) )
-#Better lear O(C(n,k) × k) which is number of combinations of n and k multiplied bu size of each combination k.
+#Better learn O(C(n,k) × k) which is number of combinations of n and k multiplied bu size of each combination k.
 
 # S:O(k)
