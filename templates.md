@@ -25,6 +25,8 @@ while l <= r:
 -Single-Element Inputs: How does your algorithm behave with just one element? ([5], "a").
 -All Elements are Identical: Inputs where all elements are the same ([3, 3, 3, 3]).
 -Very Large Inputs: Consider the performance implications. Will your solution hit time or memory limits? Think about integer overflow for large numbers.
+- What are the limits for each element in the array?
+Example: if you have a huge input size 10**5, then this is a hint about algorithm to use. For example that you should not work with n**2 complexity.
 2. Special Values
 Zeros: How does your code handle 0? Does it involve division or multiplication by zero?
 Negative Numbers: Does the logic change for negative values?
@@ -40,3 +42,6 @@ Clarify Assumptions: Before you start coding, ask the interviewer about the cons
 Brainstorm Before Coding: Take a minute to list out potential edge cases for the specific problem. This shows you're thinking ahead.
 Handle Upfront: Often, you can check for simple edge cases (like an empty input) at the very beginning of your function. This can simplify the main logic.
 Test Your Solution: After writing your code, mentally walk through it with your brainstormed edge cases to see if it holds up. For instance, trace your pointers with an empty array or a single-element array.
+4. Intervals
+- are they sorted?
+- are all values are valid?

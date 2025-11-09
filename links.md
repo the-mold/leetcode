@@ -10,3 +10,9 @@ https://leetcode.com/problems/sum-of-two-integers/description/
 
 https://leetcode.com/problems/word-search-ii/description/
 https://leetcode.com/problems/target-sum/description/
+
+
+
+https://leetcode.com/problems/subarrays-with-k-different-integers/
+https://leetcode.com/problems/boats-to-save-people/description/
+https://leetcode.com/problems/determine-if-two-events-have-conflict/description/
