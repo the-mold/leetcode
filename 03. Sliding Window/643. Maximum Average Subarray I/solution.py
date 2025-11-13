@@ -1,11 +1,22 @@
-# Intuition: calculate rolling sum over the array. Calculate the avarage only in the end.
+class Solution:
+    def findMaxAverage(self, nums: List[int], k: int) -> float:
+        if len(nums) == 0:
+            return 0
 
-def findMaxAverage(self, nums: List[int], k: int) -> float:
-    s = sum(nums[:k])
-    max_sum = s
-    for i in range(k, len(nums)):
-        s += nums[i] - nums[i - k]
-        if s > max_sum:
-            max_sum = s
+        max_average = float("-inf")
+        l = 0
+        curr_sum = 0
 
-    return max_sum / k
+        for r in range(len(nums)):
+            curr_sum += nums[r]
+
+            if r >= k - 1:
+                max_average = max(max_average, curr_sum / k)
+
+                curr_sum -= nums[l]
+                l += 1
+        
+        return max_average
+
+# T:O(n)
+# S:O(1)
