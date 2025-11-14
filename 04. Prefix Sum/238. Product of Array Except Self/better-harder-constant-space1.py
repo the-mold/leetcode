@@ -21,4 +21,3 @@ def productExceptSelf(nums: list[int]) -> list[int]:
 # T:O(n)
 # S:O(1), the solution has O(n) but it is expected by the problem. O(1) means that my solution does not use any additional space.
 
-productExceptSelf([1,2,3,4])
