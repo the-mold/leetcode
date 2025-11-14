@@ -18,3 +18,6 @@ https://leetcode.com/problems/boats-to-save-people/description/
 https://leetcode.com/problems/determine-if-two-events-have-conflict/description/
 
 https://leetcode.com/problems/number-of-substrings-containing-all-three-characters/description/
+
+mock interview amazon
+https://leetcode.com/problems/open-the-lock/description/

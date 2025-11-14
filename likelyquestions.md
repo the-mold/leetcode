@@ -1,3 +1,7 @@
+Questions y companies:
+https://github.com/liquidslr/leetcode-company-wise-problems
+
+
 https://seanprashad.com/leetcode-patterns/
 
 1. Array and String Manipulation
@@ -83,6 +87,7 @@ Q2. Given two arrays A1, A2 and target, return the index from A1 and index from 
 - Find the lexicographically smallest string by removing one digit and inserting its incremented value.
 ##
 3434. Maximum Frequency After Subarray Operation
+https://leetcode.com/problems/open-the-lock/description/
 
 
 Apple
