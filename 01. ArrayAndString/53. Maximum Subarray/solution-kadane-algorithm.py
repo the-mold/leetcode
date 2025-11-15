@@ -12,6 +12,7 @@ class Solution:
         # Maximum sum of subarray ending at current position
         maxEnding = nums[0]
 
+        # important to start with 1 because you processed the 0 index above already
         for i in range(1, len(nums)):
             # Either extend the previous subarray or start 
             # new from current element
