@@ -10,3 +10,6 @@ def pivotIndex(nums: List[int]) -> int:
       left_sum += nums[i]
   
   return -1
+
+# T:O(n)
+# S:O(1)

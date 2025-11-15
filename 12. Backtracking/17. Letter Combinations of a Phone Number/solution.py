@@ -51,8 +51,7 @@ class Solution:
 
 
 # Time Complexity: O(N * M^N)
-# The algorithm builds a recursion tree. The depth of this tree is N.
-# At each level of the tree, we branch out for each possible letter of the current digit. In the worst case, we create M branches.
+# The algorithm builds a recursion tree. The depth of this tree is N. At each level of the tree, we branch out for each possible letter of the current digit. In the worst case, we create M branches.
 # This results in a total of M^N possible combinations (the leaf nodes of the tree).
 # For each of these M^N combinations, we perform an operation to create the final string. In Python, creating the final string current_combination of length N takes O(N) time.
 # Therefore, the total time complexity is the number of solutions multiplied by the time it takes to build each solution, which is O(N * M^N).
