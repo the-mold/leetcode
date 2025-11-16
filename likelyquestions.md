@@ -1,7 +1,3 @@
-Questions y companies:
-https://github.com/liquidslr/leetcode-company-wise-problems
-
-
 https://seanprashad.com/leetcode-patterns/
 
 1. Array and String Manipulation

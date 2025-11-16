@@ -4,10 +4,10 @@ class Solution:
         count = 0
         for i in range(n):
             for j in range(i, n):
-                if sum(nums[i:j+1]) == k:
+                if sum(nums[i:j+1]) == k:       # ⚠️ O(N) space!
                     count += 1
 
         return count 
 
 # T:O(n**3)
-# S:O(1)
+# S:O(N)
