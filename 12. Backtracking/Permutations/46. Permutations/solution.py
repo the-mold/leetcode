@@ -2,6 +2,7 @@ class Solution:
     def permute(self, nums: List[int]) -> List[List[int]]:
         res = []
         n = len(nums)
+        # keep track if indexes that are currently being used
         used = [False] * n
 
         def backtrack(curr_arr):
@@ -9,10 +10,14 @@ class Solution:
                 res.append(list(curr_arr))
                 return
 
-            for i in range(0, n):
+            # loop every time through all the numbers. Skip the ones that are currently being used.
+            for i in range(n):
+                # Condition 1: If this index has already been used in this path, skip.
                 if used[i]:
                     continue
 
+                # --- Choose, Explore, Un-choose ---
+                # Choose the number at index i
                 used[i] = True
                 curr_arr.append(nums[i])
                 backtrack(curr_arr)
