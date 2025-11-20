@@ -12,7 +12,7 @@ class Solution:
         even = head.next
         even_head = even
 
-        while even != None and even.next != None:
+        while (even != None and even.next != None) or (odd != None and odd.next != None):
             odd.next = even.next
             odd = odd.next
             even.next = odd.next
