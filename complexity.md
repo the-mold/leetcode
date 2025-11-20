@@ -7,6 +7,11 @@ Example: Dictionary lookup (dict[key]), Set lookup (x in set)
 2. O(log n) – Logarithmic Time. 
 Problem size reduces by half each step.
 Example: Binary Search.
+
+What is log(n)?
+There is en exponent 2**5 = 32
+The `log` operation is reverse to it: log(32) = 5. It asks to which power do i need to raise 2 to get 32?
+
 3. O(n) – Linear Time. 
 Scales directly with input size.
 Example: Looping through an array(for loop, sum(nums), max(nums)).
@@ -18,6 +23,8 @@ Example: Merge Sort, QuickSort (average case).
 5. O(n²) – Quadratic Time
 Nested loops make performance slow.
 Example: Bubble Sort, Selection Sort, Insertion Sort.
+
+Note: everyting that is n to the power of some constant is called polynomial time.
 
 #Worst Performance---------
 6. O(2ⁿ) – Exponential Time
