@@ -14,7 +14,7 @@ class Solution:
                 diff = amt - coin # find the diff between searched amount and current coin
                 if diff < 0:
                     break
-                res = min(res, 1 + solve(diff)) # find minimum of current amoutnt and 1 coin + number of coins needed to build the diff.
+                res = min(res, 1 + solve(diff)) # find minimum of current amount and 1 coin + number of coins needed to build the diff.
             
             memo[amt] = res
             return res

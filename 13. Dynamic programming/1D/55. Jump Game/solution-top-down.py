@@ -1,12 +1,13 @@
 class Solution:
     def canJump(self, nums: List[int]) -> bool:
         n = len(nums)
-        memo = {
-            # Base case 1: We successfully reached the last index.
-            n-1: True
-        }
+        memo = {}
 
         def can_reach(position):
+            # Base case 1: We successfully reached the last index.
+            if position >= n - 1:
+               return True
+            
             if position in memo:
                 return memo[position]
         
