@@ -1,3 +1,6 @@
+# Recursion
+base case - smallest possible problem.
+
 # Two pointers
 Used when going through a linnear structure(arr or linked list or strings).
 
