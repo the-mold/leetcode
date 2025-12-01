@@ -9,7 +9,7 @@ def detectCycle(head):
 
   while fast and fast.next:
     slow = slow.next
-    fast = fast.slow.slow
+    fast = fast.next.next
 
     if slow == fast:          #if there is a loop, then pointers will eventually be the same. If they are the same, then there is a loop.
       return True
