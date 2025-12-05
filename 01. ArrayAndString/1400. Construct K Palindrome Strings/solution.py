@@ -1,3 +1,8 @@
+# The critical observation is about characters with odd frequencies:
+# - A palindrome can have at most one character with an odd count (which goes in the center)
+# - If you have multiple characters with odd counts, each one must be the center of a different palindrome
+# - Therefore, the number of odd-count characters determines the minimum number of palindromes you're forced to create
+
 class Solution:
     def canConstruct(self, s: str, k: int) -> bool:
         n = len(s)
