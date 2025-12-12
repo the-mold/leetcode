@@ -1,62 +1,54 @@
 class Solution:
     def subarraySum(self, nums: List[int], k: int) -> int:
-        currSum = 0
-        count = 0
-        prefixSums = defaultdict(int)
-        
-        prefixSums[0] = 1
+        prefix = [0]
+        curr_sum = 0
 
         for num in nums:
-            currSum += num
+            curr_sum += num
+            prefix.append(curr_sum)
 
-            diff = currSum - k
-            if diff in prefixSums:
-                #Why Frequency Matters
-                #If prefix_sum - k appears multiple times in our history, it means there are multiple different subarrays ending at the current position with sum = k.
-                count += prefixSums[diff]
+        count = 0
+        seen = collections.defaultdict(int)
+        for num in prefix:
+            complement = num - k
 
-            # The frequency tells us HOW MANY different starting positions can form a valid subarray ending at the current position.
-            prefixSums[currSum] += 1
+            #check if complement in seen.
+            # seen[complement] tells us how many previous prefix sums equal the value we need
+            # Each occurrence represents a different starting position for a valid subarray
+            # If we've seen the same prefix sum multiple times, we can form multiple subarrays ending at the current position
+            if complement in seen:
+                count += seen[complement]
+            
+            # increment count of sums that we checked already
+            seen[complement] += 1
 
         return count
-    
-#T:O(n)
-#S:O(1)
+
+# T:O(n)
+# S:O(n)
 
 
-# How It Works
-# Example 1: nums = [1,1,1], k = 2
+# Example:
+# numbers =    [1, 2, -1, 3], target_sum = 2
+# prefix_sum = [0, 1,  3, 2, 5]
 
-# Index	num	prefix_sum	prefix_sum - k	count	sum_freq
-# -	-	0	-	0	{0: 1}
-# 0	1	1	-1	0	{0: 1, 1: 1}
-# 1	1	2	0	1	{0: 1, 1: 1, 2: 1}
-# 2	1	3	1	2	{0: 1, 1: 1, 2: 1, 3: 1}
-# Valid subarrays:
+# Step 1: num=0, complement=0-2=-2, seen={}, count=0
+#         seen = {0: 1}
 
-# [1,1] (indices 0-1): prefix_sum[1]=2, prefix_sum[-1]=0, diff=2 ✅
-# [1,1] (indices 1-2): prefix_sum[2]=3, prefix_sum[0]=1, diff=2 ✅
-# Output: 2 ✅
+# Step 2: num=1, complement=1-2=-1, seen={0:1}, count=0  
+#         seen = {0: 1, 1: 1}
 
-# Example 2: nums = [1,2,3], k = 3
+# Step 3: num=3, complement=3-2=1, seen={0:1, 1:1}, count=0+1=1
+#         (Found subarray [2] with sum 2)
+#         add seen[complement] to count
+#         seen = {0: 1, 1: 1, 3: 1}
 
-# Index	num	prefix_sum	prefix_sum - k	count	sum_freq
-# -	-	0	-	0	{0: 1}
-# 0	1	1	-2	0	{0: 1, 1: 1}
-# 1	2	3	0	1	{0: 1, 1: 1, 3: 1}
-# 2	3	6	3	2	{0: 1, 1: 1, 3: 1, 6: 1}
-# Valid subarrays:
+# Step 4: num=2, complement=2-2=0, seen={0:1, 1:1, 3:1}, count=1+1=2
+#         (Found subarray [1,2,-1] with sum 2)
+#         add seen[complement] to count
+#         seen = {0: 1, 1: 1, 3: 1, 2: 1}
 
-# [1,2] (indices 0-1): sum = 3 ✅
-# [3] (index 2): sum = 3 ✅
-# Output: 2 ✅
-
-# Why This Works
-# Prefix sum trick: sum(nums[i:j+1]) = prefix_sum[j] - prefix_sum[i-1]
-# Target: We want prefix_sum[j] - prefix_sum[i-1] = k
-# Rearrange: prefix_sum[i-1] = prefix_sum[j] - k
-# Count: For each j, count how many previous positions had prefix_sum = current_sum - k
-# Edge Cases
-# k = 0: Counts subarrays with sum 0
-# Negative numbers: Works correctly (unlike sliding window)
-# Multiple subarrays with same sum: Hash map tracks frequency
+# Step 5: num=5, complement=5-2=3, seen={0:1, 1:1, 3:1, 2:1}, count=2+1=3
+#         (Found subarray [-1,3] with sum 2)
+#         add seen[complement] to count
+#         seen = {0: 1, 1: 1, 3: 1, 2: 1, 5:1}

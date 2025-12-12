@@ -49,3 +49,31 @@ Explanation: There is 1 choose 1 = 1 total combination.
 Constraints:
 1 <= n <= 20
 1 <= k <= n
+
+
+
+
+Feedback:
+
+:28 Started
+Quickly got the diff between ladders and bricks
+:30 going over example
+:35 described recursion (backtracking), but did not mention complexity
+:38 got correct greedy idea
+:41 tiny hints
+:42 got heap 
+:46 going over example
+:53 coding recursion
+:01 finished coding (a couple of minor bugs left)
+:03 ended
+
+
+- clarifying questions/constrains: +
+- custom examples/test cases: +
+- algorithm discussion: +
+- communication/cooperating with interviewer: +/-
+- brute force solution: +
+- optimal solution: -
+- coding: +/-
+- code debugging, fixing errors: -
+- time/memory complexity: -/+
