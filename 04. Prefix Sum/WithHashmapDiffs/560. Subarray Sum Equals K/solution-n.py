@@ -1,3 +1,5 @@
+# Note: to get here step by step start with n**3 and after n**2 solution.
+
 class Solution:
     def subarraySum(self, nums: List[int], k: int) -> int:
         prefix = [0]
