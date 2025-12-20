@@ -11,3 +11,6 @@ class Solution:
             subsets_with_first.append([first, *sub])
 
         return subsets_without_first + subsets_with_first
+      
+# T:O(2**n)
+# S:O(2**n)

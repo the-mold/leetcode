@@ -14,7 +14,7 @@ def findKthLargest(nums, k):
   
   return min_heap[0]  # Root of min-heap is the k-th largest element
 
-#T: O(n log k)
+#T: O(n log k), where log k is operation on the heap. Your heap could be of height of max log k because you allow only k items in the heap.
 #S: O(k)
 
 nums = [3,2,1,5,6,4]
