@@ -1,0 +1,1 @@
+This is a structy problem https://www.structy.net/problems/premium/heap-deletion

@@ -1,0 +1,1 @@
+Write a function that takes in a list of numbers and a value, k. The function should return the k smallest numbers in the list. The resulting list should be ordered from least to greatest.
