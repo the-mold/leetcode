@@ -6,6 +6,7 @@ def _knapsack(values, weights, weight_limit, idx, memo):
   if key in memo:
     return memo[key]
 
+  # NOTE: it is important that this base case comes before the next base case! 
   if weight_limit < 0:
     return float("-inf")
   if idx == len(weights):
