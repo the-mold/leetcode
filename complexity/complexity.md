@@ -39,6 +39,8 @@ def fibonacci(n):
 
 7. O(n!) – Factorial Time
 The worst complexity, common in permutation problems.
+Rule of thumb: branching factor in DYNAMIC. It is not constant. See screenshots in examples and compare exponential to factorial.
+In exponential you always branch in constant way. In factorial branching is dynamic(it is changing).
 Example: Generating all permutations (brute force).
 ```
 def permute(nums, path=[]):
@@ -59,7 +61,8 @@ Nested loops? `O(n^(number_of_loops))`
 3. Check for recursion → Estimate calls and tree size.
 O(log n): If a problem size is halved each step (e.g., Binary Search).
 O(n log n): Merge Sort, QuickSort.
-O(2ⁿ) or O(n!): Recursive problems (e.g., Fibonacci, Backtracking).
+O(2ⁿ) or O(n!): Recursive problems with branching factors (e.g., Fibonacci, Backtracking).
+See screenshots in `examples`.
 
 Python examples:
 #Array

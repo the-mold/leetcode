@@ -15,7 +15,6 @@ https://www.structy.net/
 
 TODO
 https://leetcode.com/problems/word-search-ii/description/
-https://leetcode.com/problems/target-sum/description/
 
 https://www.youtube.com/watch?v=8NPbAvVXKR4
 https://www.youtube.com/watch?v=RR1n-d4oYqE
