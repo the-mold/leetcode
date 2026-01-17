@@ -7,6 +7,7 @@ class Solution:
 
         k = k % n
 
+        # Each single iteration of this loop shifts all elements of the list one position to the right.
         for _ in range(k):
             prev = nums[-1]
             for j in range(n):
