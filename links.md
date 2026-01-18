@@ -29,6 +29,8 @@ https://leetcode.com/problems/spiral-matrix
 https://leetcode.com/problems/text-justification
 https://leetcode.com/problems/number-of-flowers-in-full-bloom
 
+317: https://leetcode.com/problems/shortest-distance-from-all-buildings/description/
+https://www.youtube.com/watch?v=PIeiiceWe_w
 
 
 https://www.youtube.com/watch?v=8NPbAvVXKR4
