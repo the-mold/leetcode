@@ -29,9 +29,6 @@ https://leetcode.com/problems/spiral-matrix
 https://leetcode.com/problems/text-justification
 https://leetcode.com/problems/number-of-flowers-in-full-bloom
 
-https://www.youtube.com/watch?v=PIeiiceWe_w
-https://leetcode.com/problems/shortest-distance-to-a-character/description/
-
 
 https://www.youtube.com/watch?v=8NPbAvVXKR4
 https://www.youtube.com/watch?v=RR1n-d4oYqE
