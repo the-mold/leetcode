@@ -15,3 +15,6 @@ def longestConsecutive(self, nums: List[int]) -> int:
           current_sequence = 0
   
   return max_sequence + 1       #add 1 to account for the very first element
+
+# T:O(nlogn)
+# S:O(n)

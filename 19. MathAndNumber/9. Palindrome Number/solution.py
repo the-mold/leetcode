@@ -1,13 +1,31 @@
 class Solution:
     def isPalindrome(self, x: int) -> bool:
-        x_str = str(x)
-        l = 0
-        r = len(x_str) - 1
-        while l < r:
-            if x_str[l] == x_str[r]:
-                l += 1
-                r -= 1
-            else:
+        if x < 0:
+            return False
+
+        divider = 1
+        while x >= 10 * divider:
+            divider *= 10
+
+        while x:
+            left = x % 10
+            right = x // divider
+
+            if left != right:
                 return False
+            
+            # Modify number
+            # 1. remove left number
+            x = x % divider
+            # 2. remove right number
+            x = x // 10
+
+            divider = divider // 100
         
         return True
+
+# T:O(log n)
+# Finding the divider: O(log n) iterations
+# Checking palindrome: O(log n) iterations
+
+# S:O(1)

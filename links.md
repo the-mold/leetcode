@@ -12,7 +12,6 @@ https://github.com/liquidslr/leetcode-company-wise-problems
 
 
 TODO
-https://leetcode.com/problems/shortest-distance-from-all-buildings/description/
 https://leetcode.com/problems/word-search-ii/description/
 
 https://leetcode.com/problems/logger-rate-limiter
@@ -25,7 +24,6 @@ https://leetcode.com/problems/top-k-frequent-words
 https://leetcode.com/problems/cache-with-time-limit
 https://leetcode.com/problems/minimum-remove-to-make-valid-parentheses
 https://leetcode.com/problems/spiral-matrix
-
 https://leetcode.com/problems/text-justification
 https://leetcode.com/problems/number-of-flowers-in-full-bloom
 
