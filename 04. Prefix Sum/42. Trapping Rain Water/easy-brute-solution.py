@@ -13,7 +13,9 @@ class Solution:
             for r in range(i, n):
                 right_max = max(right_max, height[r])
 
-            ans += min(left_max, right_max) - height[i]
+            water =  min(left_max, right_max) - height[i]
+            if water > 0:
+                ans += water
         
         return ans
     
