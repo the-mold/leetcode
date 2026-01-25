@@ -3,29 +3,23 @@ class Solution:
         if x < 0:
             return False
 
-        divider = 1
-        while x >= 10 * divider:
-            divider *= 10
-
-        while x:
-            left = x % 10
-            right = x // divider
-
-            if left != right:
-                return False
-            
-            # Modify number
-            # 1. remove left number
-            x = x % divider
-            # 2. remove right number
-            x = x // 10
-
-            divider = divider // 100
+        reverted_num = 0
+        x_copy = x
+        while x_copy != 0:
+            right = x_copy % 10
+            reverted_num = (reverted_num * 10) + right
+            x_copy = x_copy // 10
         
-        return True
+        return x == reverted_num
 
-# T:O(log n)
-# Finding the divider: O(log n) iterations
-# Checking palindrome: O(log n) iterations
+# n = value of the input number
+
+# T:O(logn), Number of digits in a number n is ⌊log(n)⌋ 
+# Examples:
+# n = 9 → 1 digit → log₁₀(9) ≈ 0.95 → ⌊0.95⌋ + 1 = 1
+# n = 99 → 2 digits → log₁₀(99) ≈ 1.99 → ⌊1.99⌋ + 1 = 2
+# n = 12321 → 5 digits → log₁₀(12321) ≈ 4.09 → ⌊4.09⌋ + 1 = 5
+
 
 # S:O(1)
+

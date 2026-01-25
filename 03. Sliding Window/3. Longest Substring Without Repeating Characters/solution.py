@@ -12,3 +12,8 @@ def lengthOfLongestSubstring(self, s):
     sett.add(s[r])
   
   return ans
+
+# Time Complexity is O(n) even though it looks like there are two loops. 
+# The first and the second loop will run at most n times, therefore, O(n).
+
+#S: O(n)

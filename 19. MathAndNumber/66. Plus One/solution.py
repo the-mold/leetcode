@@ -1,19 +1,15 @@
 class Solution:
     def plusOne(self, digits: List[int]) -> List[int]:
-        n = len(digits)
+        for i in range(len(digits)- 1, -1, -1):
+            digit = digits[i]
 
-        carry = 1
-        for i in range(n - 1, -1, -1):
-            digits[i] += carry
-
-            if digits[i] == 10:
+            if digit == 9:
                 digits[i] = 0
-                carry = 1
             else:
-                carry = 0
-                break
+                digits[i] += 1
+                return digits
         
-        if carry == 1:
-            return [1] + digits
+        return [1] + digits
 
-        return digits
+#T:O(n)
+#S:O(1)
