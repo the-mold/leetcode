@@ -1,0 +1,1 @@
+you are given meetings time intervals of two people. you also given time constrants when these two people are allowed to have meetings. Return interval when these two people could have meetings. Example: p1=[[12:00,13:00]], p2=[[10:00, 12:00]], avail1=[9:00,17:00],avail2=[10:00,17:00],duration=90(mins). Output: [13:00,17:00]
