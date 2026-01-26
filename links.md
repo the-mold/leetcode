@@ -35,3 +35,7 @@ https://www.youtube.com/watch?v=RR1n-d4oYqE
 
 Maximum Vacation Days with Limited PTO
 
+
+# Top problems
+https://leetcode.com/company/google/?favoriteSlug=google-thirty-days
+https://leetcode.com/problem-list/7p55wqm/
