@@ -40,3 +40,5 @@ class Solution:
         kSum(4, 0, target)
         return res
 
+# T:O(n**3)
+# S:O(n)

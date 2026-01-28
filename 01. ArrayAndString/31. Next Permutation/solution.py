@@ -1,3 +1,33 @@
+# Intuition: remember that you are looking for the next SORTED permutation.
+# To find next sorted permutation:
+#1. Find the pivot element. This is the element that we could exchange by some other element on the right.
+# Formula to find pivot: got from right to start. Find the element where nums[i] < nums[i+1]. It means that we could change the element by at least i+1.
+# Example 1:
+# [1,2,3]
+#    P
+# To get next sorted permutation, we can change 2 by 3 because lexilogically [1,3,2] comes after [1,2,3].
+
+# Example 2:
+# [2,1,5,4,3,0]
+#    P 
+
+# 2. Find the smallest element from the right that is greater than nums[pivot_idx] and exchange it.
+
+# 3. Sort all numbers from the right of the pivot element. Because the right side is sort of sorted already in descending order,
+# you can achieve sorting in asc order by reversing the right side.
+
+# Example walkthrough:
+#Step 1:
+# [2,1,5,4,3,0]
+#    P 
+#Step 2:
+# [2,3,5,4,1,0]
+#    P 
+#Step 3:
+#Reverse the right side [5,4,1,0] which results in:
+# [2,3,0,1,4,5]
+#    P 
+
 class Solution:
     def nextPermutation(self, nums: List[int]) -> None:
         """
