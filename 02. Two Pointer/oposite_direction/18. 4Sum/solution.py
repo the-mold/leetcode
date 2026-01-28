@@ -39,4 +39,5 @@ class Solution:
       
       
 #T:O(n**3)
-#S:O(n), because of sorting
+#S:O(n), because of sorting. You do not need to count res size because it is excluded from space estimation because problem asks you to deliver it.
+#Just FYI, the res is O(k), where k is number of quadruplets.
