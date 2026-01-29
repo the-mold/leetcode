@@ -1,17 +1,19 @@
-from collections import deque
+import collections
+class Solution:
+    def maxSlidingWindow(self, nums: List[int], k: int) -> List[int]:
+        q = collections.deque()
+        res = []
 
-def maxSlidingWindow(nums: list[int], k: int) -> list[int]:
-    if len(nums) < k:
-        return max(nums)
-    q = deque(nums[:k])
-    res = []
-    res.append(max(q))
+        for i in range(len(nums)):
+            q.append(nums[i])
 
-    for i in range(k, len(nums)):
-        q.popleft()
-        q.append(nums[i])
-        res.append(max(q))
-    
-    return res
+            if len(q) == k:
+                res.append(max(q))
+                q.popleft()
+        
+        return res
 
 maxSlidingWindow([1,3,-1,-3,5,3,6,7], 3)
+
+#T:O(n)
+#S:O(k), we need space for k elems in the deque. Because k is constant, we can say that space complexity is O(1)

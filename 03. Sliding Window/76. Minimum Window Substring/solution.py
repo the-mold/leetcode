@@ -79,6 +79,6 @@ class Solution:
 # The right pointer moves from the start to the end of string s exactly once.
 # The left pointer also moves from the start to the end of s at most once.
 # Even though there's a nested while loop, each character of s is processed by the right pointer once and by the left pointer once. This means we are effectively making a single pass over s. Therefore, this part of the algorithm is O(M).
-# Combining these two steps, the total time complexity is O(N) + O(M) = O(M + N). This is very efficient because the runtime scales linearly with the size of the input strings.
+# Combining these two steps, the total time complexity is O(N) + O(M) = O(M + N). 
 
-#S:O(m)
+#S: O(∣S∣+∣T∣). ∣S∣ when the window_counts is equal to the entire string S. ∣T∣ when T has all unique characters, hence dict_t has all unique chars.
